@@ -68,6 +68,7 @@ main{
 }
 #range{
     width:100%;
+    background: linear-gradient(to right, #A4F3EB 0%, #A4F3EB 50%, #fff 50%, #fff 100%);
 }
 .label{
     font-size: 32px;
@@ -101,6 +102,10 @@ background-color: #7AEADF;
 }
 #range::-webkit-slider-thumb:active{
 background-color: #24AEA1;
+}
+.month{
+    position: relative;
+    top:20px;
 }
 .billing{
     padding:0 24px;
@@ -197,6 +202,9 @@ ul li::before{
     margin-top:32px;
     cursor: pointer;
 }
+.button:hover{
+    color:#fff;
+}
 @media only screen and (min-width: 1200px) {
 .text-l{
     font-size: 28px;
@@ -230,6 +238,10 @@ ul li::before{
     line-height: 55px;
     text-align: right;
     letter-spacing: -1px;
+}
+.month{
+    left:190px;
+    top:-105px;
 }
 .billing{
     padding: 0 48px;
