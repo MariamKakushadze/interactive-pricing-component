@@ -3,6 +3,7 @@ const label=document.querySelector('.label');
 const views=document.querySelector('.pageviews');
 const check=document.getElementById('checkbox');
 const month=document.querySelector('.month');
+const checkBG=document.querySelector('.check-label');
 
 let value = (range.value-range.min)/(range.max-range.min)*100;
 range.style.background = 'linear-gradient(to right, #82CFD0 0%, #82CFD0 ' + value + '%, #fff ' + value + '%, white 100%)';
@@ -14,8 +15,12 @@ check.addEventListener('click', function(){
         count++
         if(count%2!=0){
             label.innerHTML=`$144.00`;
+            checkBG.style.backgroundColor=`#7AEADF`
+            month.innerHTML=`/ year`;
         }else{
             label.innerHTML=`$16.00`;
+            checkBG.style.backgroundColor=`#CFD8EF`
+            month.innerHTML=`/ month`;
         } 
  })
 }
